@@ -1,0 +1,29 @@
+/*---------------------------------*/
+/*CSS DA PÁGINA HOME*/
+html{
+    scroll-behavior: smooth;
+} .body {
+    padding: 0;
+    margin: 0;
+} .home {
+    background-color: #0000;
+    width: auto;
+    height: 630px;
+}
+
+/* CORPO DA PÁGINA */
+.home {
+    display: grid;
+    max-width: 1349px;
+    max-height: 630px;
+    grid-template-areas: 
+    "logo menu menu"
+    "texto texto texto"
+    "botoes botoes botoes";
+} .logo{
+    grid-row: "logo";
+} .menu{
+    grid-row: "texto";
+} .botoes{
+    grid-row: "botoes";
+}
