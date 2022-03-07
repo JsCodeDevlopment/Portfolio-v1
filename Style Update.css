@@ -3,27 +3,61 @@
 html{
     scroll-behavior: smooth;
 } .body {
-    padding: 0;
-    margin: 0;
+    padding: 0; margin: 0;
 } .home {
-    background-color: #0000;
-    width: auto;
-    height: 630px;
+    background-color: #0000; width: auto; height: 630px;
 }
 
 /* CORPO DA PÁGINA */
 .home {
-    display: grid;
-    max-width: 1349px;
-    max-height: 630px;
-    grid-template-areas: 
-    "logo menu menu"
+    display: grid; max-width: 1349px; max-height: 630px; grid-template-areas: 
+    "cabecalho cabecalho cabecalho"
     "texto texto texto"
     "botoes botoes botoes";
-} .logo{
-    grid-row: "logo";
-} .menu{
-    grid-row: "texto";
+} .cabecalho{
+    grid-column: "cabecalho";
+} .texto{
+    grid-column: "texto";
+    text-align: center;
 } .botoes{
-    grid-row: "botoes";
+    grid-column: "botoes";
+}
+
+/* ESTILO DAS FONTES */
+.a {
+    font-family: Roboto; color: #ffff; text-decoration: none; /* REMOVE O SUBLINHADO QUE A TAG A POSSUI */
+    padding: 10px 10px;
+}
+.title {
+    font-family: bebas neue; color: #ed354f; border: 0; margin: 0; padding: 0; font-size: 116px;
+} .title2 {
+    font-family: bebas neue; color: #ffff; padding: 0; font-size: 83px; margin: 0;
+} .subtittle {
+    font-family: Roboto; color: #767d87; margin: 0; font-size: 24px; border: 0;
+}
+
+/* BOTTON PROPRIEDADES */
+/* BOTTON 1 */
+.button-18 {  
+    align-items: center; background-color: #ed354f; border: 0; border-radius: 100px; box-sizing: border-box; color: #ffffff;
+    cursor: pointer; display: inline-flex; font-family: Roboto; font-size: 16px; font-weight: 600; justify-content: center;
+    line-height: 20px; max-width: 480px; min-height: 40px; min-width: 0px; overflow: hidden; padding: 0px; padding-left: 20px;
+    padding-right: 20px; text-align: center; touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none; -webkit-user-select: none; vertical-align: middle;
+  }.button-18:hover, .button-18:focus { 
+    background-color: #d10924; color: #ffffff;
+  }.button-18:active {
+    background: #767d87; color: rgb(255, 255, 255, .7);
+  } .button-18:disabled { 
+    cursor: not-allowed; background: rgba(0, 0, 0, .08); color: rgba(0, 0, 0, .3);
+  }
+  /* BOTTON 2 */
+  .button-19 {
+    margin-left: 50px; align-items: center; background-color: #ed354e00; border: 2; border-radius: 100px; box-sizing: border-box;
+    color: #ffffff; cursor: pointer; display: inline-flex; font-family: Roboto; font-size: 16px; font-weight: 600; justify-content: center;
+    line-height: 20px; max-width: 480px; min-height: 40px; min-width: 0px; overflow: hidden; padding: 0px; padding-left: 20px;
+    padding-right: 20px; text-align: center; touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none; -webkit-user-select: none; vertical-align: middle;
 }
