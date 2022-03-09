@@ -22,7 +22,8 @@ html{
     float: right;
     margin-top: 60px;
     margin-right: 150px;
-} /* MENU SUPERIOR TEXTOS */ .a {
+} /* MENU SUPERIOR TEXTOS */ 
+.a {
     font-family: Roboto;
     color: #ffff;
     text-decoration: none; /* REMOVE O SUBLINHADO QUE A TAG A POSSUI */
