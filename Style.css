@@ -23,7 +23,7 @@ html{
     text-align: center;
 } .botoes{
     display: flex;
-    margin-top: 5%;
+    margin-top: 7%;
     justify-content: center;
 }
 
@@ -88,3 +88,80 @@ html{
 /*---------------------------------*/
 /*ALINHAMENTO DA PÁGINA PORTFÓLIO*/
 
+.portifolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1349px;
+    height: 630px;
+    justify-content: center;
+}
+.potTitle {
+    width: 100%;
+    padding: 0 25%;
+}
+.contentPort {
+    display: block;
+    width: 700px;
+    height: 435px;
+    background-color: #272d2f;
+    border: 1em;
+    border: solid #d10924;
+    border-radius: 2em;
+    align-content: center;
+    margin: 0 10px;
+}
+.menuPort{
+    display: flex;
+    justify-content: center;
+}
+.imgs{
+    justify-content: space-between;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    margin-left: 5%;
+
+} .imgs > div > img {
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid #d10924;
+    border-radius: 1em;
+}
+
+/*---------------------------------*/
+/*ALINHAMENTO DA PÁGINA PORTFÓLIO*/
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1349px;
+    height: 610px;
+}
+.contactTitle {
+    width: 100%;
+    padding: 0 25%;   
+}
+.contactContent {
+    width: 900px;
+    height: 435px;
+    background-color: #272d2f;
+    border: 1em;
+    border: solid #d10924;
+    border-radius: 2em;
+    align-content: center;
+    margin: 0 10px;
+} .input {
+    border: 1em;
+    border: solid #d10924;
+    border-radius: 2em;
+    height: 50px;
+} .inputText {
+    border: 1em;
+    border: solid #d10924;
+    border-radius: 2em;
+    height: 200px;
+    width: 470px;
+}
