@@ -135,23 +135,28 @@ html{
 
 .contact {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     max-width: 1349px;
     height: 610px;
 }
 .contactTitle {
-    width: 100%;
-    padding: 0 25%;   
+    width: auto;
+    margin-bottom: 10px;
+    padding: 0 25%;
 }
 .contactContent {
+    display: flex;
     width: 900px;
     height: 435px;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    gap: 10px 10px;
     background-color: #272d2f;
     border: 1em;
     border: solid #d10924;
     border-radius: 2em;
-    align-content: center;
     margin: 0 10px;
 } .input {
     border: 1em;
@@ -163,5 +168,16 @@ html{
     border: solid #d10924;
     border-radius: 2em;
     height: 200px;
-    width: 470px;
+    width: 800px;
+} .contactFooter {
+    padding-top: 5%;
+} .form{
+    padding-top: 2%;
+    display: flex;
+    max-height: 370px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    gap: 10px 10px;
 }
