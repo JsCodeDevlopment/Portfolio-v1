@@ -60,28 +60,31 @@ html{
     display: flex;
     flex-wrap: wrap;
     max-width: 1349px;
+    justify-content: space-around;
 } .LATERALESQUERDA {
-    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 300px;
     height: 70%;
-    margin: 2% 0 0 10%;
     padding: 2%;
     background-color: #272d2f;
     border: 1em;
     border: solid #d10924;
     border-radius: 2em;
-} .LOGO{
-    margin-left: 30px;
-} .FOTO {
-    margin-left: 65px;
+    margin: 10px 5px;
 } .LATERALDIREITA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2% 3%;
     width: 600px;
+    min-height: 520px;
     background-color: #272d2f;
     border: 1em;
     border: solid #d10924;
     border-radius: 2em;
-    margin: 25px;
+    margin: 10px 5px;
 }
 
 
@@ -101,7 +104,6 @@ html{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
     padding: 0 25%;
     margin: 10px 0;
 }
@@ -109,13 +111,13 @@ html{
     display: flex;
     flex-direction: column;
     width: 700px;
-    max-height: 370px;
+    min-height: 370px;
     background-color: #272d2f;
     border: 1em;
     border: solid #d10924;
     border-radius: 2em;
     align-content: center;
-    margin: 0 10px;
+    margin: 10px;
 }
 .menuPort{
     display: flex;
@@ -147,13 +149,15 @@ html{
     height: 610px;
 }
 .contactTitle {
-    width: auto;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 0 25%;
+    margin: 10px 0;
 }
 .contactContent {
     display: flex;
-    width: 900px;
+    max-width: 900px;
     height: 435px;
     flex-direction: column;
     align-items: center;
@@ -163,7 +167,7 @@ html{
     border: 1em;
     border: solid #d10924;
     border-radius: 2em;
-    margin: 0 10px;
+    margin: 10px;
 } .input {
     border: 1em;
     border: solid #d10924;
@@ -174,16 +178,18 @@ html{
     border: solid #d10924;
     border-radius: 2em;
     height: 200px;
-    width: 800px;
+    width: 500px;
 } .contactFooter {
     padding-top: 5%;
 } .form{
     padding-top: 2%;
     display: flex;
-    max-height: 370px;
+    max-width: 900px;
+    min-height: 370px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
     gap: 10px 10px;
-}
+    padding-bottom: 10px;
+} 
