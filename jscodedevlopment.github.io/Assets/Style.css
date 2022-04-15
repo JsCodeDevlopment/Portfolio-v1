@@ -1,0 +1,202 @@
+/*---------------------------------*/
+/*ALINHAMENTO DA PÁGINA HOME*/
+html{
+    scroll-behavior: smooth;
+} .body {
+    padding: 0; margin: 0;
+    background-repeat: repeat-y;
+}
+
+/* CORPO DA PÁGINA */
+.home {
+    max-width: 1349px;
+    height: 630px;
+    display: block; /* coloco os filhos em linhas com caracteristica de w e h */
+} .cabecalho{
+    display: flex;
+    max-width: 1349px;
+    height: 12%;
+    align-items: center; /* alinha os filhos na vertical */
+    justify-content: space-between; /* alinha os filhos na horizontal */
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);  
+    padding: 0 7px;
+} .texto{
+    max-height: 400px;
+    text-align: center;
+} .botoes{
+    display: flex;
+    margin-top: 7%;
+    justify-content: center;
+}
+
+/* BOTTON PROPRIEDADES */
+/* BOTTON 1 */
+.button-18 {  
+    align-items: center; background-color: #ed354f; border: 0; border-radius: 100px; box-sizing: border-box; color: #ffffff;
+    cursor: pointer; display: inline-flex; font-family: Roboto; font-size: 16px; font-weight: 600; justify-content: center;
+    line-height: 20px; max-width: 480px; min-height: 40px; min-width: 0px; overflow: hidden; padding: 0px; padding-left: 20px;
+    padding-right: 20px; text-align: center; touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none; -webkit-user-select: none; vertical-align: middle;
+  }.button-18:hover, .button-18:focus { 
+    background-color: #d10924; color: #ffffff;
+  }.button-18:active {
+    background: #767d87; color: rgb(255, 255, 255, .7);
+  } .button-18:disabled { 
+    cursor: not-allowed; background: rgba(0, 0, 0, .08); color: rgba(0, 0, 0, .3);
+  }
+  /* BOTTON 2 */
+  .button-19 {
+    margin-left: 50px; align-items: center; background-color: #ed354e00; border: 2; border-radius: 100px; box-sizing: border-box;
+    color: #ffffff; cursor: pointer; display: inline-flex; font-family: Roboto; font-size: 16px; font-weight: 600; justify-content: center;
+    line-height: 20px; max-width: 480px; min-height: 40px; min-width: 0px; overflow: hidden; padding: 0px; padding-left: 20px;
+    padding-right: 20px; text-align: center; touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none; -webkit-user-select: none; vertical-align: middle;
+}
+
+/*---------------------------------*/
+/*ALINHAMENTO DA PÁGINA SOBRE*/
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1349px;
+    justify-content: space-around;
+} .LATERALESQUERDA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 70%;
+    padding: 2%;
+    background-color: #272d2f;
+    border: 1em;
+    border: solid #d10924;
+    border-radius: 2em;
+    margin: 10px 5px;
+} .LATERALDIREITA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 3%;
+    width: 600px;
+    min-height: 520px;
+    background-color: #272d2f;
+    border: 1em;
+    border: solid #d10924;
+    border-radius: 2em;
+    margin: 10px 5px;
+}
+
+
+/*---------------------------------*/
+/*ALINHAMENTO DA PÁGINA PORTFÓLIO*/
+
+.portifolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1349px;
+    min-height: 630px;
+    justify-content: center;
+    padding: 0 10px;
+}
+.potTitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25%;
+    margin: 10px 0;
+}
+.contentPort {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    min-height: 370px;
+    background-color: #272d2f;
+    border: 1em;
+    border: solid #d10924;
+    border-radius: 2em;
+    align-content: center;
+    margin: 10px;
+}
+.menuPort{
+    display: flex;
+    justify-content: center;
+}
+.imgs{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: center;
+    
+
+} .imgs > div > img {
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid #d10924;
+    border-radius: 1em;
+}
+
+/*---------------------------------*/
+/*ALINHAMENTO DA PÁGINA CONTATO*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1349px;
+    height: 610px;
+}
+.contactTitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25%;
+    margin: 10px 0;
+}
+.contactContent {
+    display: flex;
+    max-width: 700px;
+    height: 435px;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    gap: 10px 10px;
+    background-color: #272d2f;
+    border: 1em;
+    border: solid #d10924;
+    border-radius: 2em;
+    margin: 10px;
+} .input {
+    border: 1em;
+    border: solid #d10924;
+    border-radius: 2em;
+    height: 40px;
+    max-width: 200px;
+} .inputText {
+    border: 1em;
+    border: solid #d10924;
+    border-radius: 2em;
+    height: 200px;
+    min-width: 500px;
+    margin: 10px 0;
+} .contactFooter {
+    padding-top: 5%;
+} .form{
+    display: flex;
+    max-width: 900px;
+    max-height: 370px;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    padding: 10px;
+} .formEnd{
+    display: flex;
+    width: 680px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

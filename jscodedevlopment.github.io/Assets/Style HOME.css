@@ -1,0 +1,381 @@
+/*---------------------------------*/
+/*CSS DA PÁGINA HOME*/
+
+/* CORPO DA PÁGINA */
+html{
+    scroll-behavior: smooth;
+} .body {
+    padding: 0;
+    margin: 0;
+} .home {
+    background-color: #0000;
+    width: auto;
+    height: 630px;
+}
+/* LOGOTYPE */
+.logo {
+    float: left;
+    margin-left: 150px;
+}
+/* MENU SUPERIROR DIV */
+.menu {
+    float: right;
+    margin-top: 60px;
+    margin-right: 150px;
+} /* MENU SUPERIOR TEXTOS */ 
+.a {
+    font-family: Roboto;
+    color: #ffff;
+    text-decoration: none; /* REMOVE O SUBLINHADO QUE A TAG A POSSUI */
+    padding: 10px 10px;
+    margin: 0;
+}
+/* TEXTOS CENTRAIS */
+.texto {
+    float: left;
+    margin-top: 50px;
+    margin-left: 40px;
+    text-align: center;
+} .title {
+    font-family: bebas neue;
+    color: #ed354f;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 116px;
+} .title2 {
+    font-family: bebas neue;
+    color: #ffff;
+    padding: 0;
+    font-size: 83px;
+    margin: 0;
+} .subtittle {
+    font-family: Roboto;
+    color: #767d87;
+    margin: 0;
+    font-size: 24px;
+    border: 0;
+}
+/* BOTTON PROPRIEDADES */
+.botoes{
+    float: left;
+    margin: 50px;
+    padding: 10px;
+    margin-left: 485px;
+} 
+/* BOTTON 1 */
+.button-18 {  
+  align-items: center;
+  background-color: #ed354f;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}.button-18:hover, .button-18:focus { 
+  background-color: #d10924;
+  color: #ffffff;
+}.button-18:active {
+  background: #767d87;
+  color: rgb(255, 255, 255, .7);
+} .button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+/* BOTTON 2 */
+.button-19 {
+    margin-left: 50px;
+    align-items: center;
+    background-color: #ed354e00;
+    border: 2;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+/*---------------------------------*/
+/*CSS DA PÁGINA ABAOUT*/
+
+/*LADO ESQUERDO*/
+/*Informações Estilos nos Textos*/
+.InfTitle {
+    font-family: Roboto;
+    color: #ed354f;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+} .InfRandom {
+    font-family: Roboto;
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+}
+/*LADO DIREITO*/
+/*Informações Estilos nos Textos*/
+.Title {
+    font-family: Bebas Neue;
+    color: #ed354f;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+} .Random {
+    font-family: Roboto;
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+} .Year {
+    text-align: center;
+    font-family: Roboto;
+    color: #f2f2f2;
+    margin: 0;
+} .RedTitle {
+    text-align: center;
+    font-family: Roboto;
+    color: #ed354f;
+    margin: 0;
+} .SubTitle {
+    text-align: center;
+    font-family: Roboto;
+    color: #767d87;
+    margin: 0;
+}
+
+/*ALINHAMENTO DA PAGINA*/
+
+.about {
+    width: auto;
+    max-height: 630px;
+}
+/*ESQUERDA*/
+.LATERALESQUERDA {
+    float: left;
+    padding: 10px;
+}.LOGO {
+    margin-left: 80px;
+} .FOTO {
+    margin-left: 115px;
+} .INFORMACOES {
+    margin-left: 35px;
+    max-width: 300px;
+}
+
+/*DIREITA*/
+.LATERALDIREITA {
+    height: 630px;
+    padding: 10px;
+    max-width: 90%;
+} .MYHISTORY{
+    margin-left: 40%;
+    max-width: 80%;
+} .SKILLS{
+    margin-left: 40%;
+    max-width: 80%;
+} .CERTIFICADOS{
+    margin-left: 40%;
+    max-width: 80%;
+}
+
+/*---------------------------------*/
+/*CSS DA PÁGINA PORTIFÓLIO*/
+
+/*ALINHAMENTO DA PAGINA*/
+.portifolio{
+    background-color: #0000;
+    width: auto;
+    height: 630px;
+} .potTitle{
+    float: left;
+    width: 800px;
+    margin-top: 2%;
+    margin-left: 20%;
+} .contentPort{
+    width: 800px;
+    background-color: #272d2f;
+    float: left;
+    margin-left: 20%;
+    min-height:420px;
+    margin-top: 3%;
+    border: 1em;
+    border-radius: 2em;
+} .menuPort{
+    text-align: center;
+} .img1{
+    float: left;
+    width: 170px;
+    height: 170px;
+    margin-left: 8%;
+} .img2{
+    float: left;
+    width: 170px;
+    height: 170px;
+} .img3{
+    float: left;
+    width: 170px;
+    height: 170px;
+} .img4{
+    float: left;
+    width: 170px;
+    height: 170px;
+} .img5{
+    float: left;
+    width: 170px;
+    height: 170px;
+    margin-top: 1px;
+    margin-left: 8%;
+} .img6{
+    float: left;
+    width: 170px;
+    height: 170px;
+    margin-top: 1px;
+} .img7{
+    float: left;
+    width: 170px;
+    height: 170px;
+    margin-top: 1px;
+} .img8{
+    float: left;
+    width: 170px;
+    height: 170px;
+    margin-top: 1px;
+}
+
+
+/*---------------------------------*/
+/*CSS DA PÁGINA CONTATO*/
+
+/*ALINHAMENTO DA PAGINA*/
+/*.contact{
+    background-color: #0000;
+    width: auto;
+    height: 630px;
+} .contactContent{
+    width: 800px;
+    background-color: #272d2f;
+    float: left;
+    margin-left: 20%;
+    min-height:420px;
+    margin-top: 3%;
+    border: 1em;
+    border-radius: 2em;
+} .contactTitle {
+    float: left;
+    width: 800px;
+    margin-top: 2%;
+    margin-left: 20%;
+} #input{
+    border-color: #d10924;
+    border-radius: 2em;
+} .footerRandom {
+    font-family: Roboto;
+    color: #ffff;
+    margin: 0;
+    font-size: 14px;
+    border: 0;
+} .footerTitle {
+    font-family: Roboto;
+    color: #d10924;
+    margin: 0;
+    font-size: 14px;
+    border: 0;
+} .contactFooter{
+    float: left;
+    margin-top: 480px;
+    margin-left: 0%;
+}*/
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+} .contactTitle{
+    margin-left: 235px;
+    width: 50%;
+    justify-content: center;
+    padding: 2%;
+} .contactContent{
+    padding: 30px;
+    width: 800px;
+    background-color: #272d2f;
+    border: 1em;
+    border-radius: 2em;
+    margin-left: 235px;
+    min-height:300px;
+    padding-bottom: 50px;
+    justify-items: center;
+} .contactFooter{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    justify-items: center;
+    bottom: 0;
+} .footerRandom {
+    font-family: Roboto;
+    color: #ffff;
+    font-size: 14px;
+    text-align: center;
+} .footerTitle {
+    font-family: Roboto;
+    color: #d10924;
+    font-size: 14px;
+    text-align: center;
+} .input{
+    width: 230px;
+    height: 40px;
+    border-color: #d10924;
+    border-radius: 2em;
+} #inputText {
+    height: 230px;
+    width: 460px;
+} .contactContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} #sendBotton {
+    padding: 10px;
+    align-items: center;    
+}
