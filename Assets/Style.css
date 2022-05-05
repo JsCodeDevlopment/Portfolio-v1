@@ -182,7 +182,7 @@ html{
     border: solid #d10924;
     border-radius: 2em;
     height: 200px;
-    min-width: 500px;
+    width: 580px;
     margin: 10px 0;
 } .contactFooter {
     padding-top: 5%;
@@ -191,6 +191,8 @@ html{
     max-width: 900px;
     max-height: 370px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 10px 10px;
     padding: 10px;
 } .formEnd{
@@ -199,4 +201,50 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:710px){
+    .input{
+        border: 1em;
+        border: solid #d10924;
+        border-radius: 2em;
+        height: 30px;
+        max-width: 180px;
+    }
+}
+
+@media (max-width:632px){
+    .input{
+        border: 1em;
+        border: solid #d10924;
+        border-radius: 2em;
+        height: 23px;
+        max-width: 140px;
+    }
+    .inputText {
+        border: 1em;
+        border: solid #d10924;
+        border-radius: 2em;
+        height: 170px;
+        width: 500px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:558px){
+    .input{
+        border: 1em;
+        border: solid #d10924;
+        border-radius: 2em;
+        height: 23px;
+        max-width: 100px;
+    }
+    .inputText {
+        border: 1em;
+        border: solid #d10924;
+        border-radius: 2em;
+        height: 130px;
+        width: 300px;
+        margin: 10px 0;
+    }
 }
