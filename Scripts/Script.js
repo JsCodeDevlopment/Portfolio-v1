@@ -15,3 +15,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 // Fim do código do botão VOLTAR AO TOPO
+function openPopup() {
+  let popup = document.querySelector('.popUp');
+  popup.classList.add('popUp-Open');
+}
+
+function closePopup() {
+  let popup = document.querySelector('.popUp');
+  popup.classList.remove('popUp-Open');
+}
