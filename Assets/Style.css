@@ -140,6 +140,7 @@ html {
 } .menuPort{
     display: flex;
     justify-content: center;
+    padding: 10px 0px;
 } .imgs{
     display: flex;
     gap: 10px;
