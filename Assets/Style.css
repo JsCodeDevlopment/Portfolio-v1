@@ -49,6 +49,7 @@ html{
     display: flex;
     margin-top: 7%;
     justify-content: center;
+    text-decoration: none;
 }
 
 /* BOTTON PROPRIEDADES */
@@ -97,7 +98,8 @@ html{
     border: solid #d10924;
     border-radius: 2em;
     margin: 10px 5px;
-} .LATERALDIREITA {
+    
+}.LATERALDIREITA {
     display: flex;
     flex-direction: column;
     align-items: center;
