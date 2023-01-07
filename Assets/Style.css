@@ -4,7 +4,9 @@ html{
     scroll-behavior: smooth;
 } .body {
     padding: 0; margin: 0;
+    background-color: #161a1b;
     background-repeat: repeat-y;
+    background-position: center;
 }
 
 /* CORPO DA PÁGINA */
@@ -33,6 +35,7 @@ html{
     max-width: 1349px;
     height: 630px;
     display: block; /* coloco os filhos em linhas com caracteristica de w e h */
+    margin: 0px auto 0px auto;
 } .cabecalho{
     display: flex;
     max-width: 1349px;
@@ -86,6 +89,7 @@ html{
     flex-wrap: wrap;
     max-width: 1349px;
     justify-content: space-around;
+    margin: 0px auto 0px auto;
 } .LATERALESQUERDA {
     display: flex;
     flex-direction: column;
@@ -125,6 +129,7 @@ html{
     min-height: 630px;
     justify-content: center;
     padding: 0 10px;
+    margin: 0px auto 0px auto;
 }
 .potTitle {
     display: flex;
@@ -173,6 +178,7 @@ html{
     align-items: center;
     max-width: 1349px;
     height: 610px;
+    margin: 0px auto 0px auto;
 }
 .contactTitle {
     display: flex;
