@@ -38,7 +38,6 @@ html {
     height: 12%;
     align-items: center; /* alinha os filhos na vertical */
     justify-content: space-between; /* alinha os filhos na horizontal */
-    background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);  
     padding: 0 7px;
 } .texto {
