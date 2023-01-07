@@ -45,6 +45,7 @@ html{
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);  
     padding: 0 7px;
+    margin: 0px auto 0px auto;
 } .texto{
     max-height: 400px;
     text-align: center;
