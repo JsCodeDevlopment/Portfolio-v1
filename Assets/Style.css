@@ -1,7 +1,9 @@
 /*---------------------------------*/
 /*ALINHAMENTO DA PÁGINA HOME*/
-html{
+html {
     scroll-behavior: smooth;
+} * {
+    margin: 0px auto 0px auto;
 } .body {
     padding: 0; margin: 0;
     background-color: #161a1b;
@@ -10,7 +12,6 @@ html{
 }
 
 /* CORPO DA PÁGINA */
-
 #myBtn {
     display: none;
     position: fixed;
@@ -25,18 +26,13 @@ html{
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
-  
-  #myBtn:hover {
+} #myBtn:hover {
     background-color: #272d2f;
-  }
-  
-.home {
+} .home {
     max-width: 1349px;
     height: 630px;
     display: block; /* coloco os filhos em linhas com caracteristica de w e h */
-    margin: 0px auto 0px auto;
-} .cabecalho{
+} .cabecalho {
     display: flex;
     max-width: 1349px;
     height: 12%;
@@ -45,18 +41,17 @@ html{
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);  
     padding: 0 7px;
-    margin: 0px auto 0px auto;
-} .texto{
+} .texto {
     max-height: 400px;
     text-align: center;
-} .botoes{
+} .botoes {
     display: flex;
     margin-top: 7%;
     justify-content: center;
 }
 
-/* BOTTON PROPRIEDADES */
-/* BOTTON 1 */
+/* BOTÃO PROPRIEDADES */
+/* BOTÃO 1 */
 .button-18 {  
     align-items: center; background-color: #ed354f; border: 0; border-radius: 100px; box-sizing: border-box; color: #ffffff;
     cursor: pointer; display: inline-flex; font-family: Roboto; font-size: 16px; font-weight: 600; justify-content: center;
@@ -71,7 +66,7 @@ html{
   } .button-18:disabled { 
     cursor: not-allowed; background: rgba(0, 0, 0, .08); color: rgba(0, 0, 0, .3);
   }
-  /* BOTTON 2 */
+  /* BOTÃO 2 */
   .button-19 {
     margin-left: 50px; align-items: center; background-color: #ed354e00; border: 2; border-radius: 100px; box-sizing: border-box;
     color: #ffffff; cursor: pointer; display: inline-flex; font-family: Roboto; font-size: 16px; font-weight: 600; justify-content: center;
@@ -83,13 +78,11 @@ html{
 
 /*---------------------------------*/
 /*ALINHAMENTO DA PÁGINA SOBRE*/
-
 .sobre {
     display: flex;
     flex-wrap: wrap;
     max-width: 1349px;
     justify-content: space-around;
-    margin: 0px auto 0px auto;
 } .LATERALESQUERDA {
     display: flex;
     flex-direction: column;
@@ -102,7 +95,6 @@ html{
     border: solid #d10924;
     border-radius: 2em;
     margin: 10px 5px;
-    
 }.LATERALDIREITA {
     display: flex;
     flex-direction: column;
@@ -120,7 +112,6 @@ html{
 
 /*---------------------------------*/
 /*ALINHAMENTO DA PÁGINA PORTFÓLIO*/
-
 .portifolio {
     display: flex;
     flex-direction: row;
@@ -129,16 +120,14 @@ html{
     min-height: 630px;
     justify-content: center;
     padding: 0 10px;
-    margin: 0px auto 0px auto;
-}
-.potTitle {
+    
+} .potTitle {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 25%;
     margin: 10px 0;
-}
-.contentPort {
+} .contentPort {
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -149,19 +138,15 @@ html{
     border-radius: 2em;
     align-content: center;
     margin: 10px;
-}
-.menuPort{
+} .menuPort{
     display: flex;
     justify-content: center;
-}
-.imgs{
+} .imgs{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     padding: 0 20px;
     justify-content: center;
-    
-
 } .imgs > div > img {
     max-width: 150px;
     max-height: 150px;
@@ -171,23 +156,19 @@ html{
 
 /*---------------------------------*/
 /*ALINHAMENTO DA PÁGINA CONTATO*/
-
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1349px;
     height: 610px;
-    margin: 0px auto 0px auto;
-}
-.contactTitle {
+} .contactTitle {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 25%;
     margin: 10px 0;
-}
-.contactContent {
+} .contactContent {
     display: flex;
     max-width: 700px;
     height: 435px;
@@ -232,6 +213,8 @@ html{
     align-items: center;
 }
 
+/*---------------------------------*/
+/*APLICAÇÃO DE RESPONSIVIDADE*/
 @media (max-width:710px){
     .input{
         border: 1em;
