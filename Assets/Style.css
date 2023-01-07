@@ -95,7 +95,10 @@ html {
     border: solid #d10924;
     border-radius: 2em;
     margin: 10px 5px;
-}.LATERALDIREITA {
+}.stack-img {
+    display: inline;
+    text-align: center;
+} .LATERALDIREITA {
     display: flex;
     flex-direction: column;
     align-items: center;
