@@ -21,3 +21,9 @@ function openPopup() {
   let popup = document.querySelector('.popUp');
   popup.classList.remove('popUp-Open');
 }
+let popUpOpen = document.getElementsByClassName('popUp');
+let popUpClose = document.getElementsByClassName('popUp popUp-Open');
+let clicou = document.getElementsByClassName('imagens');
+if (popUpClose == popUpClose.value) {
+  closePopup();
+}
