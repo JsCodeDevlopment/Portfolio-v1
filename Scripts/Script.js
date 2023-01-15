@@ -22,10 +22,9 @@ function openPopup() {
   popup.classList.remove('popUp-Open');
 }
 let page = document.querySelector('.contentPort');
-page.addEventListener("click", () => {
-  let popupOpen = document.querySelector('.popUp.popUp-Open');
-  console.log(popupOpen)
-  if (popupOpen) {
-    popupOpen.classList.remove('popUp-Open')
+page.addEventListener("click", (ev) => {
+  let popupOpen = document.querySelector(".popUp.popUp-Open");
+  if (popupOpen && ev.target.classList.value === "contentPort") {
+    popupOpen.classList.remove("popUp-Open");
   }
-})
+});
