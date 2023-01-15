@@ -22,7 +22,9 @@ function openPopup() {
   popup.classList.remove('popUp-Open');
 }
 let page = document.querySelector('.contentPort');
-  page.addEventListener("click", () => {
-  let popupOpen = document.querySelector('.popUp popUp-Open');
-  popupOpen.classList.remove('popUp-Open')
+page.addEventListener("click", () => {
+  let popupOpen = document.querySelector('.popUp.popUp-Open');
+  if (popupOpen) {
+    popupOpen.classList.remove('popUp-Open')
+  }
 })
