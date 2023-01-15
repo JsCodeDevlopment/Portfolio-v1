@@ -23,7 +23,8 @@ function openPopup() {
 }
 let page = document.querySelector('.contentPort');
 page.addEventListener("click", () => {
-  let popupOpen = document.querySelector('.popUp.popUp-Open');
+  let popupOpen = document.querySelector('.popUp popUp-Open');
+  console.log(popupOpen)
   if (popupOpen) {
     popupOpen.classList.remove('popUp-Open')
   }
