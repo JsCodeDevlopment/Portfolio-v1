@@ -30,15 +30,6 @@ page.addEventListener("click", (ev) => {
 });
 
 
-// function sendMail(){
-//    const nomeCompleto = document.querySelector("#nome").value;
-//    const email = document.querySelector("#email").value;
-//    const mensagem = document.querySelector("#mensagem").value;
-   
-//    const mensagemFinal = JSON.stringify({nomeCompleto, email, mensagem});
-//    console.log(mensagemFinal);
-// };
-
 class FormSubmit {
   constructor(settings) {
     this.settings = settings;
