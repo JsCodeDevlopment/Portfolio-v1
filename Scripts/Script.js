@@ -28,3 +28,79 @@ page.addEventListener("click", (ev) => {
     popupOpen.classList.remove("popUp-Open");
   }
 });
+
+
+// function sendMail(){
+//    const nomeCompleto = document.querySelector("#nome").value;
+//    const email = document.querySelector("#email").value;
+//    const mensagem = document.querySelector("#mensagem").value;
+   
+//    const mensagemFinal = JSON.stringify({nomeCompleto, email, mensagem});
+//    console.log(mensagemFinal);
+// };
+
+class FormSubmit {
+  constructor(settings) {
+    this.settings = settings;
+    this.form = document.querySelector(settings.form);
+    this.formButton = document.querySelector(settings.button);
+    if (this.form) {
+      this.url = this.form.getAttribute("action");
+    }
+    this.sendForm = this.sendForm.bind(this);
+  }
+
+  displaySuccess() {
+    this.form = alert (this.settings.success);
+  }
+
+  displayError() {
+    this.form = alert (this.settings.error);
+  }
+
+  getFormObject() {
+    const formObject = {};
+    const fields = this.form.querySelectorAll("[nome]");
+    fields.forEach((field) => {
+      formObject[field.getAttribute("nome")] = field.value;
+    });
+    return formObject;
+  }
+
+  onSubmission(event) {
+    event.preventDefault();
+    event.target.disabled = true;
+    event.target.innerText = "Enviando...";
+  }
+
+  async sendForm(event) {
+    try {
+      this.onSubmission(event);
+      await fetch(this.url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(this.getFormObject()),
+      });
+      this.displaySuccess();
+    } catch (error) {
+      this.displayError();
+      throw new Error(error);
+    }
+  }
+
+  init() {
+    if (this.form) this.formButton.addEventListener("click", this.sendForm);
+    return this;
+  }
+}
+
+const formSubmit = new FormSubmit({
+  form: "[data-form]",
+  button: "[data-button]",
+  success: "Mensagem enviada\n" + "Com sucesso! ☺",
+  error: "Não foi possível enviar sua mensagem. ☻",
+});
+formSubmit.init();

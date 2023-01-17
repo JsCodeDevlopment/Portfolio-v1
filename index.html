@@ -6,7 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="Assets/Style.css">
-    <script defer src="Scripts/Script.js"></script>
+    <script defer src="Scripts/Script.js" defer></script>
     <link rel="stylesheet" href="Assets/Text Styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -192,10 +192,12 @@
     </div>
     <div class="contactContent">
         <div class="form">
-            <input class="input" type="text" name="nome" size="35" placeholder="Nome Completo*">
-            <input class="input" type="email" name="email" size="35" placeholder="E-Mail*">
-            <input class="inputText" type="text" name="textarea" size="35" placeholder="Sua Mensagem aqui.">
-            <a class="a" href="#"><button id="sendBotton" class="button-18" role="button">Enviar</button></a>
+            <form class="form" action="https://formsubmit.co/jonatasilva118@gmail.com" method="post" data-form>
+                <input id="nome" class="input" type="text" name="nome" size="35" placeholder="Nome Completo*" required>
+                <input id="email" class="input" type="email" name="email" size="35" placeholder="E-Mail*" required>
+                <input id="mensagem" class="inputText" type="text" name="mensagem" size="35" placeholder="Sua Mensagem aqui." required>
+            </form>
+            <button id="sendBotton" type="submit" class="button-18" role="button" ; data-button>Enviar</button>
         </div>
     </div>
     <div class="contactFooter">
