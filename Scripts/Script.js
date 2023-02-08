@@ -28,6 +28,23 @@ page.addEventListener("click", (ev) => {
     popupOpen.classList.remove("popUp-Open");
   }
 });
+function openPopUp() {
+  let popup = document.querySelector('.popUp');
+  const img = document.querySelector("#imgCard")
+  img.src = "Pictures/Mockup-Gestão-de-Gastos.png"
+  console.log(img)
+  popup.classList.add('popUp-Open');
+} function closePopup() { // Quando clicar no "x" a pop-up será fechada.
+  let popup = document.querySelector('.popUp');
+  popup.classList.remove('popUp-Open');
+}
+let newPage = document.querySelector('.contentPort');
+page.addEventListener("click", (ev) => {
+  let popupOpen = document.querySelector(".popUp.popUp-Open");
+  if (popupOpen && ev.target.classList.value === "contentPort") {
+    popupOpen.classList.remove("popUp-Open");
+  }
+});
 
 
 class FormSubmit {
